@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Modified for the use of Wesley Nguyen.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\LARGE \scshape Wesley Nguyen }\ \\ \vspace{4pt}\href{https://wesngu28.com}{\raisebox{-0.2\height}\ \underline{wesngu28.com}} {\raisebox{-0.2\height}\  \underline{education@wesngu28.com}} ~
+    \href{https://github.com/wesngu28}{\raisebox{-0.2\height}\ \underline{ github.com/wesngu28}}
+    
+    \vspace{-6pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Institutional Knowledge Map, UAIR}, Tucson, AZ $|$ {Web Developer}}{Nov 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{Developed a comprehensive documentation site for the Institutional Knowledge Map project using a Markdown parser, improving information access and understanding for new users.}
+        \resumeItem{Optimized responsiveness and accessibility features across the website, ensuring a more inclusive user experience for all kinds of users.}
+        \resumeItem{Implemented a feed feature, allowing researchers to approve and edit AI-generated grants updates or create their posts to provide updates throughout the network.}
+        \resumeItem{Deployed a system for researchers to create, edit, delete, and view laboratories across campus through Next.js and MongoDB pipelines.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{International Wood Products}, Clackamas, OR $|$ {IT Specialist}}{May 2023 - Nov 2023}
+      \resumeItemListStart
+        \resumeItem{Triaged, evaluated, and resolved tickets through osTicket for technical issues from around the company.}
+        \resumeItem{Optimized and wrote PowerShell, JavaScript, and Python scripts to automate data, Microsoft 365, Linux, and Azure Active Directory tasks.}
+        \resumeItem{Supported Microsoft 365 Enterprise and ERP systems, email servers, and operations for users across states.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{International Wood Products}, Clackamas, OR $|$ {IT Intern}}{July 2022 -- Sept 2022}
+   
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{December 2022}
+      {B.A in Geography: Data Science}{Seattle, Washington}
+    \resumeSubheading
+      {University of Arizona}{January 2025}
+      {Non-degree Seeking Student}{Tucson, Arizona}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, R, PowerShell, HTML, CSS, SQL, Java} \\
+     \vspace{3pt}
+     \textbf{Frameworks}{: React.js, Redux, NextJS, NodeJS, Tailwind CSS, Svelte, Express, Playwright, FastAPI, Flask, Tauri} \\
+     \vspace{3pt}
+     \textbf{Tools}{: Git, WordPress, ArcGIS, QGIS, Postgres, MongoDB, Flask, Docker, CI/CD }}}
+ \end{itemize}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\href{https://picatso.vercel.app/}{Picatso}} $|$ {TypeScript, Next.js, React, Tailwind, Supabase}}{\vspace{3pt} \href{https://picatso.vercel.app/}{\raisebox{-0.2\height}\ \underline{Link}} ~}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web app that generates AI-driven images of cats based on user-specified adjectives and actions, earning first place in a hackathon.}
+            \vspace{2pt}
+            \resumeItem{Designed and implemented a responsive front-end to deliver an intuitive user interface for creating and interacting with the generated cat images. }
+            \vspace{2pt}
+            \resumeItem{Leveraged technologies like tRPC, Supabase, NextAuth, and Cloudinary for data storage, image hosting, and authentication to aid in rapid development and full type-safety.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://packagetracker.tech}{Package Tracker}} $|$ {Next.js, React, Firebase, Tailwind}}{\vspace{3pt} \href{https://packagetracker.tech}{\raisebox{-0.2\height}\ \underline{Link}} ~}
+          \resumeItemListStart
+            \resumeItem{Led a group in making a full-stack web application, winning best overall hack in the TransportHacks hackathon.}
+            \vspace{2pt}
+            \resumeItem{ Utilized Next.js and Tailwind to develop and implement the landing page, user page, and shipping label search result page with emphasis on UI/UX. }
+            \vspace{2pt}
+            \resumeItem{Architected the backend using Firebase with Firestore and Cloud Functions to schedule updates via cronjob.}
+        \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{RhodesAPI} $|$ {TypeScript, Express.js, Node.js, Svelte}}{\vspace{3pt} \href{https://rhodesapi.com/}{\raisebox{-0.2\height}\ \underline{Link}} ~}
+          \resumeItemListStart
+            \resumeItem{Devised and built a RESTFUL API with Node and ES6 JS for the game Arknights with Express, connecting to a MongoDB database constructed from web scraped data.}
+            \vspace{2pt}
+            \resumeItem{Simplfied deployment and build process by using Docker to containerize the project, and continuous integration to
+rebuild and push changes automatically.}
+            \vspace{2pt}
+            \resumeItem{Deployed a documentation website made with SvelteKit to allow visualization of APIs responses and improve SEO.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+% \begin{center}
+%     \tiny Updated - April 3rd 2023
+% \end{center}
+
+\end{document}
+Footer
